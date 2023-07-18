@@ -1,0 +1,32 @@
+h1{
+    color: #040F0F;
+    text-align: center;
+}
+ul#ul{
+    list-style-type: none;
+    background-color: #57737A;
+    overflow: hidden;/*para hacer independiente estos datos de los demas*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Acme';
+    font-size: 50px;
+
+}
+li#li{
+    float: left;/*ya se muestran las listas hacia la izquierda*/
+
+}
+li#li a{
+   display: block;/*Los elementos se desplegan como bloques, llamamos a los links "a"*/
+   color:#C9FBFF ;
+   text-align: center;
+   padding: 20px;
+   text-decoration: none;
+}
+li#li a:hover{
+ background-color:#040F0F ;   
+ color: #85BDBF;
+}
+body{
+    background-color: #85BDBF;
+}

@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(20, 24, 27);
+}
+caption{
+    border-collapse: collapse;/*quita el doble borde*/
+    padding: 8px;/*espacio entre bordes y letras*/
+    text-align: center;
+    border: 1px solid burlywood;
+    color: rgb(251, 255, 0);
+    font-size: xx-large;
+    line-height: 70px;
+
+}
+table, th, td{
+    border-collapse: collapse;/*quita el doble borde*/
+    padding: 8px;/*espacio entre bordes y letras*/
+    text-align: center;
+    border: 1px solid burlywood;
+    color: floralwhite;
+}
+/*
+border-spaciong: 5px; (es espacio del doble borde)
+table(depende a que etiqueta se aplique){
+    width: 100%; espacio de la tabla
+}
+*/

@@ -1,0 +1,17 @@
+h1{
+color: #C4E0F9;
+background-color: #B95F89;
+padding: 38px; /*primer espacio*/
+border:6px solid #67AAF9;/*segundo espacio*/
+margin: 10px;/*tercer espacio*/
+text-align: center;
+}
+p{
+    color: #ADEEE3;
+    background-color: #50723C;
+padding : 38px; /*primer espacio*/
+border:22px solid #63B995;/*segundo espacio*/
+margin:auto 70px;/*tercer espacio*/
+text-align: center;
+/* margin:40px 10px 10px 60px (superior, derecha, abajo, izquierda)*/
+}

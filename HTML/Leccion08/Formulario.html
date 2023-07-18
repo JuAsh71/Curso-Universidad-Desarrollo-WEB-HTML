@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <!-- Etiqueta que abre el formulario, dentro de form podemos poner "novalidate" para no validar los datos de este
+         method post o method get el primero sirve para no visualizar informacion en el navegador el otro si la visualiza
+        target="_blank" es para visualizar el mensaje en otra ventana autocomplete=on u off para activar o no-->
+    <form method="get" action="Lugar_donde_se_envia" target="_blank" autocomplete="on">
+      <fieldset><!--Agrega marco al formulario-->
+        <legend>Datos Personales (Agrega una leyenda) </legend> 
+        <!--Esta etiqueta la usaremos para especificar
+       que datos quieres que entre al usuario con for
+       la relacionaremos no el id datos-->
+        <label for="nombre">Nombre</label></br>    
+       
+        <!--Con input recibiras los datos de formulario
+        con type le dira de que tipo de datos son y con
+        el id los clasificas, name lo usaremos para especificar que se mando,
+        placeholder sirve para escribir dentro del recuadro y pedir algo,
+        required con true sirve para decir que es un dato requerido--> 
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"/>
+        
+        </br></br>
+        <label for="apellido">Apellido</label></br>
+        <input type="text" id="apellido" value="JGato" name="apellido"><!--Value nos puede servir tambien para poner un dato determinado-->
+       
+       </br></br>
+       <label for="contrasena">Constraseña</label></br>
+       <input type="password" id="contrasena">
+
+       </br></br>
+       <label for="email">Email</label></br>
+       <input type="email" id="email" name="Email">
+
+       </br></br>
+       <label for="edad">Edad</label></br>
+       <!--Step any sirve para agregar numero decimales-->
+       <input type="number" id="edad" name="Edad" step="any"/>
+
+       </br></br>
+       <!--type radio permite agregar circulos para seleccionar, pusimos el mismo nombre para que solo se pueda seleccionar uno-->
+       <label>Género</label></br>
+       <input type="radio" id="femenino" name="genero" value="Femenino"/>
+       <label for="femenino">Femenino</label>
+       <input type="radio" id="masculino" name="genero" value="Masculino"/>
+       <label for="masculino">Masculino</label>
+
+       </br></br>
+       <!--checkbox permite selecionar mas de un campo-->
+       <label>Genero musical favorito</label></br>
+       <input type="checkbox" id="clasica" name="musica" value="clasica"/>
+       <label for="clasica">Clásica</label>
+       <input type="checkbox" id="jazz" name="musica" value="jazz"/>
+       <label for="jazz">Jazz</label>
+       <input type="checkbox" id="pop" name="musica" value="pop"/>
+       <label for="pop">Pop</label>
+       <input type="checkbox" id="banda" name="musica" value="banda"/>
+       <label for="banda">Banda</label>
+
+       </br></br>
+       <!--Select permite agregar diferentes valores, de algo especifico y option desliza opciones para elegir
+           selceted true dentro de option sirve para poner primero una opcion que otra
+           multiple true dentro de select sirve para alrgar las opciones permitiendo señalar mas(Si se quita agregas solo un valor)-->
+       <label for="autos">Marca autos favorita</label></br>
+       <select id="autos" name="autos" multiple="true">
+           <option  value="volvo">Volvo</option>
+           <option value="audi">Audi</option>
+           <option selected="true" value="ferrari">Ferrari</option>
+       </select>
+
+       </br></br>
+       <!--Textarea permite agregar un area de texto, rows son filas y cols son columnas-->
+       <label for="comentarios">Comentarios</label></br>
+       <textarea id="comentario" name="comentario" rows="2" cols="30"></textarea></br>
+
+       </br></br>
+        <!--Insertamos un boton con rl tipo submit-->
+       <input type="submit" value="Enviar"/>
+       <!--Boton para no validar-->
+       <input type="submit" value="No validar" formnovalidate="formnovalidate"/>
+       <!--Boton para reestablecer la información-->
+       <input type="reset" value="Restablecer"/>
+
+       </br></br>
+       <label for="idpordefecto">Este texto lo queremos separa con un id y es solo de lectura: </label>
+       <!--dissable= on o of desabilitar o activar el click en el recuadro-->
+       <input type="text" id="idpordefecto" name="idpordefecto" readonly="true" value="200" disabled="on">
+       </br></br>
+       <input type="hidden" id="Oculto" name="Oculto" value="Informacion que se manda oculta"/>
+
+    </fieldset>
+    </form>
+
+</body>
+</html>

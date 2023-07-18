@@ -1,0 +1,45 @@
+h1{
+    color: #040F0F;
+    text-align: center;
+}
+ul#l1{
+    list-style-type: none;
+    background-color: #57737A;
+    overflow: hidden;/*para hacer independiente estos datos de los demas*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Acme';
+    font-size: 50px;
+
+}
+li#l1{
+    float: left;/*ya se muestran las listas hacia la izquierda*/
+
+}
+li#l1 a{
+   display: block;/*Los elementos se desplegan como bloques, llamamos a los links "a"*/
+   color:#C9FBFF ;
+   text-align: center;
+   padding: 20px;
+   text-decoration: none;
+}
+li#l1 a:hover{
+ background-color:#040F0F ;   
+ color: #85BDBF;
+}
+body{
+    background-color: #85BDBF;
+}
+ol#l2{
+    counter-reset: contador;/*Para que poueda resetearse el contador*/
+}
+ol#l2 li{
+    counter-increment: contador;/*Para que incremente el contador acorde al li*/
+}
+ol#l2 li::before{/*lo que pasa en la lista al principio y al final*/
+    content: 'JGato' counter(contador) 'Felinos';/*Contenido que se visualizara, establece un contador y le das una variable en parentesis*/
+    color:#C9FBFF;
+}
+ol#l2 li::after{
+    content: '.';
+}

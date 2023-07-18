@@ -1,0 +1,23 @@
+h1{
+    color: blue;
+}
+/*cuando no has hecho click en el link*/
+a:link {
+color: chocolate;
+text-decoration: none;
+}
+/*Cuando ya accediste a el*/
+a:visited{
+color: deepskyblue;
+text-decoration: none;/*quita la linea debajo del texto*/
+}
+/*cuando esta el cursor sobre el*/
+a:hover{
+  color: coral;
+  text-decoration: underline;/*pone linea debajo del texto*/
+}
+momento exacto de hacer click
+a:active{
+   color: blue;
+    text-decoration: underline;
+}

@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(1, 18, 31);
+}
+caption{
+    text-align: center;
+    border: 1px solid rgb(173, 85, 245);
+    color: rgb(178, 192, 172);
+    font-size: 60px;
+    line-height: 70px;
+font-family: 'ZCOOL KuaiLe', serif;
+background-color: rgb(4, 65, 65);
+}
+table{
+    width: 100%;
+}
+table, th, td{
+    border-collapse: collapse;/*quita el doble borde*/
+    padding: 8px;/*espacio entre bordes y letras*/
+    text-align: center;
+    border: 1px solid rgb(219, 99, 243);
+    color: floralwhite;
+}
+th{
+    color: rgba(166, 200, 252, 0.705);
+    background-color: rgb(23, 97, 97);
+}
+tr:nth-child(even){/*even seleccionar renglones pares odd impares*/
+background-color: rgb(57, 94, 94);
+}
+tr:nth-child(odd){
+background-color: rgb(48, 51, 51);;
+}

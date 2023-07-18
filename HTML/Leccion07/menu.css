@@ -1,0 +1,28 @@
+ul#ul{
+    list-style-type: none;
+    background-color: coral;
+    overflow: hidden;/*para hacer independiente estos datos de los demas*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka One';
+    font-size: 30px;
+
+}
+li#li{
+    float: left;/*ya se muestran las listas hacia la izquierda*/
+
+}
+li#li a{
+   display: block;/*Los elementos se desplegan como bloques, llamamos a los links "a"*/
+   color:rgb(250, 226, 218);
+   text-align: center;
+   padding: 20px;
+   text-decoration: none;
+}
+li#li a:hover{
+ background-color:rgb(190, 51, 0);   
+ color: coral;
+}
+.coco{
+    background-color:rgb(218, 250, 246) ;
+}
